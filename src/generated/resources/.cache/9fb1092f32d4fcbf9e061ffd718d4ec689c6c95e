@@ -1,0 +1,23 @@
+// 1.21.1	2024-12-26T23:39:37.810308412	Recipes
+a921007e391f0d0e617095ccefa75a30d31dc2d4 data/aq/advancement/recipes/misc/scute_block.json
+706f54af3acdbdc366964e9568ba0283e21a5737 data/aq/advancement/recipes/misc/turtle_block.json
+e3aaa64b88e92ee665c4cb5849d2ee61efdb0aa6 data/aq/advancement/recipes/misc/turtle_boots.json
+b3471363699ae224bc0580525b36d2e6e592a0e7 data/aq/advancement/recipes/misc/turtle_chestplate.json
+6bb1294233451c7a10217a0b60747cd280174152 data/aq/advancement/recipes/misc/turtle_ingot.json
+8a3353467210475def1e6bfe84d602bdf7c81329 data/aq/advancement/recipes/misc/turtle_ingot_2.json
+e27796549240eefbd3837c172881218d5d3cb406 data/aq/advancement/recipes/misc/turtle_leggings.json
+341d6503a583cdf8feacd6e46da5c87f986ac7eb data/aq/advancement/recipes/misc/turtle_master_boots.json
+67ce25c8b456b63c1a985c06b4bb32f3f536582e data/aq/advancement/recipes/misc/turtle_master_chestplate.json
+cb92d2e66b8958f2ffe5e93c6aa5c1240881d6b8 data/aq/advancement/recipes/misc/turtle_master_helmet.json
+73dd2a3e4a47f0ddb71340bb3402557f2b7efad7 data/aq/advancement/recipes/misc/turtle_master_leggings.json
+7015ed00664d758b30685043883d7ce17359ecf8 data/aq/recipe/scute_block.json
+8c8bf3069e2795619bedb3a0f04767991479cbfe data/aq/recipe/turtle_block.json
+44ea564663b990116d9d308f85fa633b4a91e7c0 data/aq/recipe/turtle_boots.json
+ac0541de20923eb045c0ac03f6c01c8a857a25ea data/aq/recipe/turtle_chestplate.json
+256bff53cc08c429567bb8e99a5328433122af1e data/aq/recipe/turtle_ingot.json
+ba3d637751e656f955647846b137e57ad56d469b data/aq/recipe/turtle_ingot_2.json
+1be0785ffdc083c84556ab273c9cd7fc6f706b11 data/aq/recipe/turtle_leggings.json
+a1d3a3937a54edf83659f7c6e3f77d40fe648e11 data/aq/recipe/turtle_master_boots.json
+8b0a1d2165b29a878ba7fbfe3a564d451ab543d7 data/aq/recipe/turtle_master_chestplate.json
+747939f6c437476f72855d18112d63db6a2b3dae data/aq/recipe/turtle_master_helmet.json
+ce9e8c5802f271e6275fc35e832ae4d3d66f59f3 data/aq/recipe/turtle_master_leggings.json

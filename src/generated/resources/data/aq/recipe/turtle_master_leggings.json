@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "aq:turtle_leggings"
+    },
+    "I": {
+      "item": "aq:turtle_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    "IHI",
+    "I I"
+  ],
+  "result": {
+    "count": 1,
+    "id": "aq:turtle_master_leggings"
+  }
+}

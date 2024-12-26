@@ -7,6 +7,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import org.spongepowered.include.com.google.common.collect.ImmutableMap;
@@ -14,14 +15,14 @@ import org.spongepowered.include.com.google.common.collect.ImmutableMap;
 import java.util.List;
 import java.util.Map;
 
-public class TurtleMasterArmorItem extends ArmorItem {
+public class TurtleArmorItem extends ArmorItem {
     private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
-                    .put(AQArmorMaterials.TURTLE_MASTER_MATERIAL,
-                            List.of(new MobEffectInstance(MobEffects.CONDUIT_POWER, 200, 1, false, false)))
+                    .put(AQArmorMaterials.TURTLE_MATERIAL,
+                            List.of(new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 0, false, false)))
                     .build();
 
-    public TurtleMasterArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
+    public TurtleArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
         super(material, type, properties);
     }
 
@@ -67,7 +68,7 @@ public class TurtleMasterArmorItem extends ArmorItem {
         ArmorItem helmet = ((ArmorItem) player.getInventory().getArmor(3).getItem());
 
         return boots.getMaterial() == mapArmorMaterial && leggings.getMaterial() == mapArmorMaterial
-                && chestplate.getMaterial() == mapArmorMaterial && helmet.getMaterial() == mapArmorMaterial;
+                && chestplate.getMaterial() == mapArmorMaterial && helmet.getMaterial() == ArmorMaterials.TURTLE;
     }
 
     private boolean hasFullSuitOfArmorOn(Player player) {

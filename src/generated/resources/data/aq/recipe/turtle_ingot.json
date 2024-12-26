@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "aq:turtle_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "aq:turtle_ingot"
+  }
+}

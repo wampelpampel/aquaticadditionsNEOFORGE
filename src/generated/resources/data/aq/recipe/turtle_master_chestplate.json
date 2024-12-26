@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:conduit"
+    },
+    "I": {
+      "item": "aq:turtle_ingot"
+    },
+    "P": {
+      "item": "aq:turtle_chestplate"
+    }
+  },
+  "pattern": [
+    "IPI",
+    "ICI",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "aq:turtle_master_chestplate"
+  }
+}

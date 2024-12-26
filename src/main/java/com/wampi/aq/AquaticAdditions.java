@@ -1,6 +1,7 @@
 package com.wampi.aq;
 
 import com.wampi.aq.block.AQBlocks;
+import com.wampi.aq.item.AQCreativeModeTab;
 import com.wampi.aq.item.AQItems;
 import org.slf4j.Logger;
 
@@ -55,6 +56,7 @@ public class AquaticAdditions
         NeoForge.EVENT_BUS.register(this);
         AQItems.ITEMS.register(modEventBus);
         AQBlocks.BLOCKS.register(modEventBus);
+        AQCreativeModeTab.CREATIVE_MODE_TABS.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -62,28 +64,23 @@ public class AquaticAdditions
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
+    private void commonSetup(final FMLCommonSetupEvent event) {
 
     }
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
     }
 
     @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event)
-    {
+    public void onServerStarting(ServerStartingEvent event) {
 
     }
 
     @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
+    public static class ClientModEvents {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
+        public static void onClientSetup(FMLClientSetupEvent event) {
 
         }
     }

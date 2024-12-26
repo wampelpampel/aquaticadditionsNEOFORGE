@@ -16,13 +16,18 @@ import java.util.function.Supplier;
 public class AQBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(AquaticAdditions.MODID);
 
+
+    //Hier blöcke registrieren
     public static final DeferredBlock<Block> SCUTE_BLOCK = registerBlock("scute_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.BAMBOO)
+                    .strength(0.2f).sound(SoundType.BAMBOO)
                     ));
 
-
-
+    public static final DeferredBlock<Block> TURTLE_BLOCK = registerBlock("turtle_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(1f).requiresCorrectToolForDrops()
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    ));
+    //---------------------------
 
 
     //Helpermethods
