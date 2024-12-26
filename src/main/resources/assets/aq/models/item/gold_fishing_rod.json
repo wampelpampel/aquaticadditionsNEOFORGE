@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld_rod",
-  "textures": {
-    "layer0": "aq:item/gold_fishing_rod"
-  }
-}
