@@ -81,7 +81,7 @@ public class AquaticAdditions
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            //no uses for currently
         }
     }
 }

@@ -16,36 +16,36 @@ public class AQItems {
     //Turtle master armor
     public static final DeferredItem<ArmorItem> TURTLE_MASTER_HELMET = ITEMS.register("turtle_master_helmet",
             () -> new TurtleMasterArmorItem(AQArmorMaterials.TURTLE_MASTER_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
-                    .durability(20)));
+                    .durability(407)));
 
     public static final DeferredItem<ArmorItem> TURTLE_MASTER_CHESTPLATE = ITEMS.register("turtle_master_chestplate",
             () -> new TurtleMasterArmorItem(AQArmorMaterials.TURTLE_MASTER_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
-                    .durability(20)));
+                    .durability(592)));
 
     public static final DeferredItem<ArmorItem> TURTLE_MASTER_LEGGINGS = ITEMS.register("turtle_master_leggings",
             () -> new TurtleMasterArmorItem(AQArmorMaterials.TURTLE_MASTER_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
-                    .durability(20)));
+                    .durability(555)));
 
     public static final DeferredItem<ArmorItem> TURTLE_MASTER_BOOTS = ITEMS.register("turtle_master_boots",
             () -> new TurtleMasterArmorItem(AQArmorMaterials.TURTLE_MASTER_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
-                    .durability(20)));
+                    .durability(481)));
 //-----------------------
 // Turtle armor
 public static final DeferredItem<ArmorItem> TURTLE_HELMET = ITEMS.register("turtle_helmet",
         () -> new TurtleArmorItem(AQArmorMaterials.TURTLE_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
-                .durability(20)));
+                .durability(10)));
 
     public static final DeferredItem<ArmorItem> TURTLE_CHESTPLATE = ITEMS.register("turtle_chestplate",
             () -> new TurtleArmorItem(AQArmorMaterials.TURTLE_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
-                    .durability(20)));
+                    .durability(321)));
 
     public static final DeferredItem<ArmorItem> TURTLE_LEGGINGS = ITEMS.register("turtle_leggings",
             () -> new TurtleArmorItem(AQArmorMaterials.TURTLE_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
-                    .durability(20)));
+                    .durability(289)));
 
     public static final DeferredItem<ArmorItem> TURTLE_BOOTS = ITEMS.register("turtle_boots",
             () -> new TurtleArmorItem(AQArmorMaterials.TURTLE_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
-                    .durability(20)));
+                    .durability(289)));
 
 
 

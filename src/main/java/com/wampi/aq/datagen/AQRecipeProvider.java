@@ -21,10 +21,6 @@ public class AQRecipeProvider extends RecipeProvider implements IConditionBuilde
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        /*
-        List<ItemLike> BISMUTH_SMELTABLES = List.of(ModItems.RAW_BISMUTH,
-                ModBlocks.BISMUTH_ORE, ModBlocks.BISMUTH_DEEPSLATE_ORE); */
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AQBlocks.TURTLE_BLOCK.get())
                 .pattern("BBB")
                 .pattern("BBB")

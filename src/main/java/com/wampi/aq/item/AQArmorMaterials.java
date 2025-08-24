@@ -21,21 +21,21 @@ import java.util.function.Supplier;
 public class AQArmorMaterials {
     public static final Holder<ArmorMaterial> TURTLE_MASTER_MATERIAL = register("turtle_master", Util.make(new EnumMap<>(ArmorItem.Type.class),
             attribute -> {
-                attribute.put(ArmorItem.Type.BOOTS, 5);
-                attribute.put(ArmorItem.Type.LEGGINGS, 7);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 9);
-                attribute.put(ArmorItem.Type.HELMET, 5);
+                attribute.put(ArmorItem.Type.BOOTS, 3);
+                attribute.put(ArmorItem.Type.LEGGINGS, 6);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 8);
+                attribute.put(ArmorItem.Type.HELMET, 3);
                 attribute.put(ArmorItem.Type.BODY, 11);
-            }), 15, 4f, 0.1f, () -> AQItems.TURTLE_INGOT.get());
+            }), 15, 2f, 0.15f, () -> AQItems.TURTLE_INGOT.get());
 
     public static final Holder<ArmorMaterial> TURTLE_MATERIAL = register("turtle", Util.make(new EnumMap<>(ArmorItem.Type.class),
             attribute -> {
-                attribute.put(ArmorItem.Type.BOOTS, 5);
-                attribute.put(ArmorItem.Type.LEGGINGS, 7);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 9);
+                attribute.put(ArmorItem.Type.BOOTS, 2);
+                attribute.put(ArmorItem.Type.LEGGINGS, 5);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 6);
                 attribute.put(ArmorItem.Type.HELMET, 5);
                 attribute.put(ArmorItem.Type.BODY, 11);
-            }), 15, 1f, 0.1f, () -> Items.TURTLE_SCUTE);
+            }), 15, 0f, 0.05f, () -> Items.TURTLE_SCUTE);
 
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
