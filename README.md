@@ -4,15 +4,13 @@
 
 ---
 
-<sub>
+### ➕ New Features
 
-## ➕ New Features
-
-### 🐢 Turtle Armor
+#### 🐢 Turtle Armor
 Complete the vanilla turtle armor with *Aquatic Additions*.  
 When you wear the **full set**, you gain **permanent underwater breathing**.
 
-### 👑 Armor of the Turtle Master
+#### 👑 Armor of the Turtle Master
 Upgrade your Turtle Armor with a **conduit** to gain:
 - Permanent underwater vision
 - Underwater haste
@@ -20,18 +18,19 @@ Upgrade your Turtle Armor with a **conduit** to gain:
 
 ---
 
-## 🙏 Special Thanks
+### 🙏 Special Thanks
 A huge thank-you to **Gawanas** for creating most of the stunning textures featured in this mod!
 
 ---
 
-## 📦 Modpack-Friendly
+### 📦 Modpack-Friendly
 Feel free to include this mod in your modpacks and share the enhanced underwater experience with others.
 
 ---
 
-## 🛠 Crafting Recipes
+### 🛠 Crafting Recipes
 To view crafting recipes, make sure to install the **Just Enough Items (JEI)** mod.
 
 ---
-</sub>
+
+🌊 **Dive in and discover a whole new world with Aquatic Additions!**
