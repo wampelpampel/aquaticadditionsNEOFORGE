@@ -1,4 +1,4 @@
-# Aquatic Additions
+# Aquatic Additions (Minecraft Mod)
 
 *Aquatic Additions* completes the vanilla turtle armor and also gives you the option to upgrade it, to become the one and only **Turtle Master**! This is the repository for the Neoforge implementation
 
