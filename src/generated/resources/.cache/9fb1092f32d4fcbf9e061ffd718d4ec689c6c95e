@@ -1,4 +1,8 @@
-// 1.21.1	2024-12-26T23:39:37.810308412	Recipes
+// 1.21.1	2025-10-17T14:26:20.752263279	Recipes
+f0c1e9f1121656927239ec50dddddaea2e010ba2 data/aq/advancement/recipes/combat/turtle_master_boots_via_smithing.json
+af1680febb58ae8a3034e4136a65ba13afa45fc1 data/aq/advancement/recipes/combat/turtle_master_chestplate_via_smithing.json
+05b0fce960d8ad06a6023e5b4dab8dcafbcdf62e data/aq/advancement/recipes/combat/turtle_master_helmet_via_smithing.json
+7b9b6a4037202e187f6f0419a3c2224ee2f30221 data/aq/advancement/recipes/combat/turtle_master_leggings_via_smithing.json
 a921007e391f0d0e617095ccefa75a30d31dc2d4 data/aq/advancement/recipes/misc/scute_block.json
 706f54af3acdbdc366964e9568ba0283e21a5737 data/aq/advancement/recipes/misc/turtle_block.json
 e3aaa64b88e92ee665c4cb5849d2ee61efdb0aa6 data/aq/advancement/recipes/misc/turtle_boots.json
@@ -18,6 +22,10 @@ ac0541de20923eb045c0ac03f6c01c8a857a25ea data/aq/recipe/turtle_chestplate.json
 ba3d637751e656f955647846b137e57ad56d469b data/aq/recipe/turtle_ingot_2.json
 1be0785ffdc083c84556ab273c9cd7fc6f706b11 data/aq/recipe/turtle_leggings.json
 a1d3a3937a54edf83659f7c6e3f77d40fe648e11 data/aq/recipe/turtle_master_boots.json
+8db3bde42df8f583c438503eb56b1702c54fa84e data/aq/recipe/turtle_master_boots_via_smithing.json
 8b0a1d2165b29a878ba7fbfe3a564d451ab543d7 data/aq/recipe/turtle_master_chestplate.json
+3a88642302fea7f6527eeec296f29c7d1b72e003 data/aq/recipe/turtle_master_chestplate_via_smithing.json
 747939f6c437476f72855d18112d63db6a2b3dae data/aq/recipe/turtle_master_helmet.json
+3371f11cbf4a4c89526208a25f80f014cc42c703 data/aq/recipe/turtle_master_helmet_via_smithing.json
 ce9e8c5802f271e6275fc35e832ae4d3d66f59f3 data/aq/recipe/turtle_master_leggings.json
+23fbc76e1d700f36ad898d4d41ad5e8f533a3c1d data/aq/recipe/turtle_master_leggings_via_smithing.json

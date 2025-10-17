@@ -55,7 +55,7 @@ public class AQRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .pattern("B B")
                 .define('B', Items.TURTLE_SCUTE)
                 .unlockedBy("has_scute", has(Items.TURTLE_SCUTE)).save(recipeOutput);
-
+/*
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, AQItems.TURTLE_MASTER_HELMET)
                 .pattern("III")
                 .pattern("IHI")
@@ -93,17 +93,61 @@ public class AQRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .requires(AQBlocks.TURTLE_BLOCK)
                 .unlockedBy("has_turtle_ingot", has(AQItems.TURTLE_INGOT)).save(recipeOutput);
 
-
+*/
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, AQItems.TURTLE_INGOT.get(), 1)
                 .requires(Items.PRISMARINE_SHARD)
                 .requires(Items.PRISMARINE_CRYSTALS)
                 .requires(Items.GOLD_INGOT)
                 .requires(Items.DIAMOND)
                 .unlockedBy("has_turtle_chestplate", has(AQItems.TURTLE_CHESTPLATE)).save(recipeOutput, "aq:turtle_ingot_2");
-/*
-        oreSmelting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 200, "bismuth");
-        oreBlasting(recipeOutput, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH.get(), 0.25f, 100, "bismuth");
-        */
+
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(AQItems.TURTLE_MASTER_CRAFTING_UPGRADE.get()), // Template
+                        Ingredient.of(Items.TURTLE_HELMET),                          // Base
+                        Ingredient.of(AQItems.TURTLE_INGOT.get()),                   // Addition
+                        RecipeCategory.COMBAT,
+                        AQItems.TURTLE_MASTER_HELMET.get()                           // Result
+                )
+                .unlocks("has_template", has(AQItems.TURTLE_MASTER_CRAFTING_UPGRADE.get()))
+                .unlocks("has_addition", has(AQItems.TURTLE_INGOT.get()))
+                .unlocks("has_base", has(AQItems.TURTLE_HELMET.get()))
+                .save(recipeOutput, "aq:turtle_master_helmet_via_smithing");
+
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(AQItems.TURTLE_MASTER_CRAFTING_UPGRADE.get()),
+                        Ingredient.of(AQItems.TURTLE_CHESTPLATE.get()),
+                        Ingredient.of(AQItems.TURTLE_INGOT.get()),
+                        RecipeCategory.COMBAT,
+                        AQItems.TURTLE_MASTER_CHESTPLATE.get()
+                )
+                .unlocks("has_template", has(AQItems.TURTLE_MASTER_CRAFTING_UPGRADE.get()))
+                .unlocks("has_addition", has(AQItems.TURTLE_INGOT.get()))
+                .unlocks("has_base", has(AQItems.TURTLE_CHESTPLATE.get()))
+                .save(recipeOutput, "aq:turtle_master_chestplate_via_smithing");
+
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(AQItems.TURTLE_MASTER_CRAFTING_UPGRADE.get()),
+                        Ingredient.of(AQItems.TURTLE_LEGGINGS.get()),
+                        Ingredient.of(AQItems.TURTLE_INGOT.get()),
+                        RecipeCategory.COMBAT,
+                        AQItems.TURTLE_MASTER_LEGGINGS.get()
+                )
+                .unlocks("has_template", has(AQItems.TURTLE_MASTER_CRAFTING_UPGRADE.get()))
+                .unlocks("has_addition", has(AQItems.TURTLE_INGOT.get()))
+                .unlocks("has_base", has(AQItems.TURTLE_LEGGINGS.get()))
+                .save(recipeOutput, "aq:turtle_master_leggings_via_smithing");
+
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(AQItems.TURTLE_MASTER_CRAFTING_UPGRADE.get()),
+                        Ingredient.of(AQItems.TURTLE_BOOTS.get()),
+                        Ingredient.of(AQItems.TURTLE_INGOT.get()),
+                        RecipeCategory.COMBAT,
+                        AQItems.TURTLE_MASTER_BOOTS.get()
+                )
+                .unlocks("has_template", has(AQItems.TURTLE_MASTER_CRAFTING_UPGRADE.get()))
+                .unlocks("has_addition", has(AQItems.TURTLE_INGOT.get()))
+                .unlocks("has_base", has(AQItems.TURTLE_BOOTS.get()))
+                .save(recipeOutput, "aq:turtle_master_boots_via_smithing");
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
@@ -120,7 +164,7 @@ public class AQRecipeProvider extends RecipeProvider implements IConditionBuilde
 
     protected static <T extends AbstractCookingRecipe> void oreCooking(RecipeOutput recipeOutput, RecipeSerializer<T> pCookingSerializer, AbstractCookingRecipe.Factory<T> factory,
                                                                        List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
-        for(ItemLike itemlike : pIngredients) {
+        for (ItemLike itemlike : pIngredients) {
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer, factory).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
                     .save(recipeOutput, AquaticAdditions.MODID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }

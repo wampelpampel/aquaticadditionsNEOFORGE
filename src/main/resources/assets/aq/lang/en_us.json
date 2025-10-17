@@ -6,6 +6,7 @@
   "item.aq.dolphin_finn": "Dolphin Finn",
   "item.aq.turtle_chestplate": "Turtle Chestplate",
   "item.aq.turtle_leggings": "Turtle Leggings",
+  "item.aq.turtle_master_crafting_upgrade": "Smithing Template",
   "item.aq.turtle_boots": "Turtle Boots",
   "item.aq.turtle_master_helmet": "Helmet of the Turtle Master",
   "item.aq.turtle_master_chestplate": "Chestplate of the Turtle Master",
@@ -30,5 +31,10 @@
   "item.aq.gold_fishing_rod": "Golden Fishing Rod",
   "item.aq.diamond_fishing_rod": "Diamond Fishing Rod",
   "item.aq.netherite_fishing_rod": "Netherite Fishing Rod",
-  "item.aq.golden_fish": "Golden Fish"
+  "item.aq.golden_fish": "Golden Fish",
+  "upgrade.turtle_master.applies_to": "Turtle Armor",
+  "upgrade.turtle_master.ingredients": "Turtle Ingot",
+  "upgrade.turtle_master.title": "Turtle Master Crafting Upgrade",
+  "upgrade.turtle_master.base_slot": "Turtle Armor",
+  "upgrade.turtle_master.additions_slot": "Turtle Master ingot"
 }
